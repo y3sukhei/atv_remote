@@ -5,7 +5,7 @@ import cors from "cors";
 import express from "express";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-const port = 8080;
+var port = process.env.PORT || 8080;
 const app = express();
 const server = http.createServer(app);
 import { Server } from "socket.io";
